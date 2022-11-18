@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body
+{
+
+background:grey;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+
+*{
+	margin: 0px; padding: 0px; 
+	font-family: sans-serif;
+}
+
+.main{
+	position:relative;
+	width:100%;
+	max-width:1000px;
+	margin:50px;
+	background:#484848	;
+	display:grid;
+	grid-template-columns:1fr 2fr;
+	box-shadow: 0 30px 40px rgba(0,0,0,1);
+}
+
+
+.left{
+	background-color: #fbb03b;
+	width: 275px;
+	height: 100%;
+}
+
+
+.right{
+	width: 600px;
+	float: left;
+	height: 110%;
+	margin-bottom:60px;
+	text-align:center;
+	
+}
+.name
+{
+	background:#fbb03b;
+	padding: 8px 20px ;
+	padding-left:20px;
+	
+ font-family: Arial;
+ margin-left:52px;
+ margin-right:-65px;
+ margin-bottom:20px;
+  text-align:left;
+  font-size:18px;
+	
+}
+
+
+.nameone
+{
+	background:#fbb03b;
+	padding: 8px 20px ;
+	padding-left:20px;
+	
+ font-family: Arial;
+ margin-left:10px;
+ margin-right:-65px;
+ margin-bottom:20px;
+  text-align:left;
+  font-size:18px;
+	
+}
+
+
+.ruler
+{
+	border:1px solid black;
+	padding:2px ;
+	background-color:black;
+	width:31%;
+	margin-left:474px;
+	margin-top:-55px;
+}
+
+
+.rulerone
+{
+	border:1px solid black;
+	padding:2px ;
+	background-color:black;
+	width:31%;
+	margin-left:473px;
+	margin-top:-24px;
+}
+
+.s
+{
+	list-style-type: inherit;
+	line-height:50%;
+	margin-left:20px;	
+	color:white;
+}
+.title
+{
+	padding-right:18px;
+	color:#fbb03b;
+	margin-left:-30px;
+	font-weight:bold;
+	text-align:left;
+	font-size:20px;
+}
+.work
+{
+	background-color:white;
+	padding-right:7px;
+	margin-right:400px;
+	margin-left:-60px;
+	font-weight:bold;
+	text-align:left;
+	font-size:20px;
+}
+
+
+.workone
+{
+	background-color:white;
+	padding-right:7px;
+	margin-right:380px;
+	margin-left:0px;
+	margin-top:-65px;
+	font-weight:bold;
+	text-align:left;
+	font-size:20px;
+}
+.symbols
+{
+	
+	padding-right:7px;
+	margin-right:0px;
+	margin-left:250px;
+	margin-top:-35px;
+	font-weight:bold;
+	text-align:left;
+	font-size:36px;
+}
+
+.square {
+        height: 195px;
+        width: 190px;
+		margin-left:100px;
+        border-image: none;
+        border-radius: 0 0 0 0;
+        border-style: solid;
+        }
+		
+.square1 {
+        height: 200px;
+        width: 190px;
+		color:#E8E8E8	;
+		margin-top:-168px;
+		margin-left:120px;
+        border-image: none;
+        border-radius: 0 0 0 0;
+        border-style: solid;
+        }
+		
+.profile-img{
+	
+	height: 150px;
+	background-color: #ddd;
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-top: -195px;
+	margin-left: 110px;
+}
+
+.profile-img img{
+	width: 100%;
+}
+
+.heading{
+ color: white;
+ padding-top:20px;
+ padding-bottom:10px;
+ padding: 20px -4px;
+
+ font-family: Arial;
+ margin-left:30px;
+ margin-right:30px;
+  background-color: #484848	;
+  text-align:left;
+  font-size:18px;
+}
+
+.skill-container{
+	
+	width: 80%;
+	margin: 10px 10px;
+	margin-left:30px;
+	background-color: white;
+}
+
+.skill{
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	color: black;
+}
+
+.sample{
+	width: 70%;
+	background-color: black;
+}
+
+.sample2{
+	width: 80%;
+	background-color: black;
+}
+
+.sample3{
+
+	width: 60%;
+	background-color: black;
+}
+
+.sample4{
+	width: 60%;
+background-color: black;}
+
+a:link {
+  text-decoration: none;
+  color:white;
+ 
+}
+
+button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  padding-top:20px;
+  padding-bottom:10px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0px 20px;
+  margin-left:15px;
+  background: #484848	;
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: white;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: white;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+
+/*----- button 3 -----*/
+.btn-3::after{
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+.btn-3 span::after{
+  transition-delay: 0.4s;
+  right: 0;
+  bottom: 0
+}
+.btn-3::before{
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+.btn-3 span::before{
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+}
+
+.btn-3:hover::after{
+  transition-delay: 0s;
+}
+.btn-3:hover span::after{
+  transition-delay: 0.2s;
+}
+.btn-3:hover::before{
+  transition-delay: 0.4s;
+}
+.btn-3:hover span::before{
+  transition-delay: 0.6s;
+}
